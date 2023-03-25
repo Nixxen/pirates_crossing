@@ -11,6 +11,10 @@ public class Pirate : MonoBehaviour
 
     public float moveDelay = .5f;
 
+    public AudioSource src;
+
+    public AudioClip jumpSound, death;
+
     float nextTimeToMove = 0f;
 
     bool isJumping = true;
@@ -48,6 +52,7 @@ public class Pirate : MonoBehaviour
             if (!isJumping)
             {
                 isJumping = true;
+                src.PlayOneShot(jumpSound);
                 MovePirate();
             }
                 
@@ -93,6 +98,8 @@ public class Pirate : MonoBehaviour
         // If we hit a death wall
         else if (hitInfo.CompareTag("DeathWall"))
         {
+            src.PlayOneShot(death);
+            
             // Destroy the Pirate
             Destroy(gameObject);
 
