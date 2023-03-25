@@ -18,7 +18,10 @@ public class MovementDelay : MonoBehaviour
     {
         if (movementDelay > 0)
         {
-            movementDelayText.text = "Jumping: " + movementDelay.ToString().Substring(0, 3);
+            if (movementDelay.ToString().Length > 3)
+                movementDelayText.text = "Jumping: " + movementDelay.ToString().Substring(0, 3);
+            else
+                movementDelayText.text = "Jumping: " + movementDelay.ToString();
         }
         else
         {

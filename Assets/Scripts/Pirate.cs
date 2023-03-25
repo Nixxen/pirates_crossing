@@ -100,7 +100,21 @@ public class Pirate : MonoBehaviour
             Score.scoreValue = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-    
+        else if (hitInfo.CompareTag("Convoy"))
+        {
+            // Move the pirate with the convoy
+            transform.parent = hitInfo.transform;
+        }
     }
+
+    void OnTriggerExit2D(Collider2D hitInfo)
+    {
+        if (hitInfo.CompareTag("Convoy"))
+        {
+            // Stop moving the pirate with the convoy
+            transform.parent = null;
+        }
+    }
+
 
 }
