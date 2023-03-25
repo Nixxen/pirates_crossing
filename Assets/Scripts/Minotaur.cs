@@ -14,6 +14,10 @@ public class Minotaur : MonoBehaviour
     void Start()
     {
         speed = Random.Range(minSpeed, maxSpeed);
+
+        // Destroy Minotaur after 10 seconds
+        Destroy(gameObject, 10f);
+    
     }
 
 

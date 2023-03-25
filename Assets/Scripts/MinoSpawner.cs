@@ -7,17 +7,19 @@ public class MinoSpawner : MonoBehaviour
 
     public GameObject minotaur;
 
+    public Transform[] spawnPoints;
 
     float nextTimeToSpawn = 0f;
 
     void SpawnMinotaur()
     {
+        // Select random spawn
+        int spawnIndex = Random.Range(0, spawnPoints.Length);
         // Spawn Minotaur
-        Instantiate(minotaur, transform.position, transform.rotation);
+        Instantiate(minotaur, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
     
     }
 
-    
 
     void Update ()
     {
