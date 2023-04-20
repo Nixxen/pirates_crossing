@@ -1,6 +1,6 @@
 # Pirate's Crossing - BetaJam 2 Entry
 
-Welcome to the repository for Pirate's Crossing, my entry for BetaJam 2 GameJam. 
+Welcome to the repository for Pirate's Crossing, my entry and first price winner for BetaJam 2 GameJam. 
 The theme for the GameJam was "Pirate".
 
 ## Description
