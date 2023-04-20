@@ -10,7 +10,7 @@ Pirate's Crossing is a frogger-like game where you play as a pirate on a mission
 Yngvar Rednose has lost his crew, as they sail away to find a better captain. Yngvar is clever though! He saw through the mutinous dogs and foresaw the ploy to take his ship. Yngvar has hidden treasures along the river to help him establish his power again! Sadly minotaurs are rampaging the riverbed, and they aren't happy. Help Yngvar navigate the minotaur rampage and cross the river to get to his booty.
 
 ## How to Play
-To play the game, simply download it from [this itch.io page][https://nixxenftw.itch.io/pirates-crossing] and run the game file on your local machine. Use the arrow keys to move your character. 
+To play the game, simply download it from [the itch.io page](https://nixxenftw.itch.io/pirates-crossing) and run the game file on your local machine. Use the arrow keys to move your character. 
 
 ## Credits
 This game was developed by Nixxen during BetaLan 27, for the event BetaJam 2.
